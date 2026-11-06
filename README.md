@@ -111,7 +111,7 @@ Figures are saved as PDF (editable text) and 600 dpi PNG, 180 mm wide. Fitted mo
 
 ## Software
 
-The results in the paper were produced with R 4.5.3, glmmTMB 1.1.15.2 and emmeans 2.0.3, together with readr, dplyr, tidyr, ggplot2, patchwork and scales. Bootstrap, permutation and simulation steps use a fixed random seed, so repeated runs give the same results.
+The results were produced with R 4.5.3, glmmTMB 1.1.15.2 and emmeans 2.0.3, together with readr, dplyr, tidyr, ggplot2, patchwork and scales. Bootstrap, permutation and simulation steps use a fixed random seed, so repeated runs give the same results.
 
 
 ## Contact

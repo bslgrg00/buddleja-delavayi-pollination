@@ -2,10 +2,6 @@
 
 Data and R code for a two-year field study (2025–2026) of the threatened shrub *Buddleja delavayi* (Scrophulariaceae) in Jianchuan County, Yunnan, China. The study combines a pollen-supplementation experiment, flower-visitor observations, pollen loads of visitors and a plant-level human-disturbance index.
 
-> **Associated paper:** [Authors] ([Year]). Pollen limitation, flower visitors, and human disturbance in *Buddleja delavayi* (Scrophulariaceae). *[Journal]*. [DOI]
->
-> **Archived version:** [Zenodo DOI, added after the first release]
-
 ## Quick start
 
 1. Install R (tested with R 4.5.3) and the packages:
@@ -20,8 +16,6 @@ Data and R code for a two-year field study (2025–2026) of the threatened shrub
    ```r
    source("run_all.R")
    ```
-
-The full run takes about two minutes and writes all results to `outputs/`.
 
 ## Repository structure
 
@@ -38,7 +32,7 @@ R/
   07_figures.R                 figures
   08_tables.R                  Benjamini-Hochberg correction, identifier table, session info
 run_all.R                      runs scripts 02-08 in order
-outputs/                       results (created by the scripts)
+outputs/                       results
 ```
 
 Each script can also be run on its own once the earlier scripts have been run.
@@ -78,7 +72,7 @@ All files are comma-separated, UTF-8 encoded, with one header row. Missing value
 | `year`, `plant_id`, `field_label` | as above |
 | `road` | road proximity score, scored in the field |
 | `herbivory_observer1`, `cutting_observer1` | field scores of the first observer |
-| `herbivory_observer2`, `cutting_observer2` | scores from photographs by a second observer (used in the main analyses) |
+| `herbivory_observer2`, `cutting_observer2` | scores from photographs by a second observer |
 
 All scores range from 0 to 2. Road proximity is 0 for more than 200 m, 1 for 50–200 m and 2 for less than 50 m from the nearest road. Herbivory is 0 for no evidence, 1 for some browsing marks or occasional dung and 2 for heavy browsing or active grazing. Cutting is 0 for no evidence, 1 for old weathered stumps and 2 for recent or repeated cutting.
 
@@ -119,10 +113,7 @@ Figures are saved as PDF (editable text) and 600 dpi PNG, 180 mm wide. Fitted mo
 
 The results in the paper were produced with R 4.5.3, glmmTMB 1.1.15.2 and emmeans 2.0.3, together with readr, dplyr, tidyr, ggplot2, patchwork and scales. Bootstrap, permutation and simulation steps use a fixed random seed, so repeated runs give the same results.
 
-## License
-
-Code: [MIT License](LICENSE). Data: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please cite the paper when using the data or code.
 
 ## Contact
 
-[Name], [Institution], [e-mail]
+Bishal Gurung, bsl.grg1996@gmail.com

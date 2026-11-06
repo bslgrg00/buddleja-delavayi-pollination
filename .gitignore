@@ -1,0 +1,13 @@
+# R and RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# fitted models (recreated by run_all.R)
+outputs/models/
+
+# system files
+Thumbs.db
+desktop.ini
+.DS_Store
